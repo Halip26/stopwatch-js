@@ -1,8 +1,8 @@
 // initialize all variables
-let milli_seconds = 0; // declare and initialize variable for milliseconds
-let seconds = 0; // declare and initialize variable for seconds
-let minutes = 0; // declare and initialize variable for minutes
-let h2 = document.getElementById("time"); // get the HTML element with the ID "time" and store it in the variable h2
+let milli_seconds = 0;
+let seconds = 0;
+let minutes = 0;
+let h2 = document.getElementById("time");
 
 // get the HTML elements with the IDs "button-start", "button-stop", and "button-reset" and store them in the variables start, stop, and clear
 let start = document.getElementById("button-start");
@@ -17,7 +17,7 @@ function count() {
   milli_seconds += interval; // add 1 second to the milliseconds variable
 
   // check if the milliseconds variable is greater than or equal to 100
-  if (milli_seconds >= 100) {
+  if (milli_seconds >= 60) {
     milli_seconds = 0; // reset the milliseconds variable to 0
     seconds += interval; // add 1 second to the seconds variable
   }
