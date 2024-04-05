@@ -14,7 +14,6 @@ body {
 }
 
 h1 {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: bolder;
   font-size: 4rem;
   text-transform: uppercase;
@@ -41,17 +40,19 @@ button {
   font-weight: bolder;
   border: solid 0.2rem white;
   box-shadow: 0.5rem 0.5rem 0.5rem #b4b1b1;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 
 button:hover {
+  transition: 0.2s ease-in-out;
   background: white;
   border: solid 0.2rem #16abe6;
   color: #16abe6;
   font-weight: bolder;
+  box-shadow: 0.2rem 0.2rem 0.5rem #16abe6;
 }
 
-/* Media queries for smaller screens */
+/* to make it responsive */
 @media (max-width: 768px) {
   .wrapper {
     top: 10%;
@@ -59,11 +60,11 @@ button:hover {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   #time {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -72,11 +73,13 @@ button:hover {
     font-size: 1.2rem;
     padding: 1.2rem 0.8rem;
     margin: 0.5rem;
-    width: 12rem;
+    margin-top: 0.7rem;
+    width: 9rem;
+    box-shadow: 0.2rem 0.1rem 0.5rem #b4b1b1;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 360px) {
   .wrapper {
     top: 5%;
     left: 5%;
@@ -87,7 +90,7 @@ button:hover {
   }
 
   #time {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -96,6 +99,8 @@ button:hover {
     font-size: 1rem;
     padding: 1rem 0.6rem;
     margin: 0.3rem;
-    width: 10rem;
+    margin-top: 1rem;
+    width: 6rem;
+    box-shadow: 0.2rem 0.1rem 0.5rem #b4b1b1;
   }
 }
