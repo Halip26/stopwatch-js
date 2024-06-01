@@ -53,36 +53,13 @@ button:hover {
 }
 
 /* to make it responsive */
-@media (max-width: 768px) {
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
   .wrapper {
-    top: 10%;
-    left: 10%;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  #time {
-    font-size: 3.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  button {
-    font-size: 1.2rem;
-    padding: 1.2rem 0.8rem;
-    margin: 0.5rem;
-    margin-top: 0.7rem;
-    width: 9rem;
-    box-shadow: 0.2rem 0.1rem 0.5rem #b4b1b1;
-  }
-}
-
-@media (max-width: 360px) {
-  .wrapper {
+    margin-top: 120px;
     top: 5%;
-    left: 5%;
+    left: 3%;
+    right: 3%;
   }
 
   h1 {
@@ -101,6 +78,32 @@ button:hover {
     margin: 0.3rem;
     margin-top: 1rem;
     width: 6rem;
+    box-shadow: 0.2rem 0.1rem 0.5rem #b4b1b1;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    top: 30%;
+    left: 20%;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  #time {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 1.2rem 0.8rem;
+    margin: 0.5rem;
+    margin-top: 0.7rem;
+    width: 9rem;
     box-shadow: 0.2rem 0.1rem 0.5rem #b4b1b1;
   }
 }
