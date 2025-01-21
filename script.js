@@ -11,8 +11,8 @@ let clear = document.getElementById("button-reset");
 
 let interval = 1; // set the initial interval to 1 second
 
-// create a function called count
-function count() {
+// create a function called countUp
+function countUp() {
   interval = 1; // set the interval to 1 second
   milli_seconds += interval; // add 1 second to the milliseconds variable
 
@@ -41,11 +41,11 @@ function count() {
 
 // create a function called timer
 function timer() {
-  t = setTimeout(count, 10); // call the count function every 10 milliseconds
+  t = setTimeout(countUp, 10); // call the count function every 10 milliseconds
 }
 
 // add an event listener to the HTML element with the ID "button-start" that calls the count function when clicked
-start.onclick = count;
+start.onclick = countUp;
 
 // add an event listener to the HTML element with the ID "button-stop" that clears the timeout when clicked
 stop.onclick = function () {
