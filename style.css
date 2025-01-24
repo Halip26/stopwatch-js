@@ -11,6 +11,7 @@ body {
   position: absolute;
   top: 20%;
   left: 20%;
+  align-content: center;
 }
 
 h1 {
@@ -84,8 +85,8 @@ button:hover {
 /* for tablet screen */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrapper {
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 25%;
   }
 
   h1 {
