@@ -16,7 +16,7 @@ function countUp() {
   interval = 1; // set the interval to 1 second
   milli_seconds += interval; // add 1 second to the milliseconds variable
 
-  // check if the milliseconds variable is greater than or equal to 100
+  // check if the milliseconds variable is greater than or equal to 60
   if (milli_seconds >= 60) {
     milli_seconds = 0; // reset the milliseconds variable to 0
     seconds += interval; // add 1 second to the seconds variable
